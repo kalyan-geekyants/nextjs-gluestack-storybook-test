@@ -1,7 +1,7 @@
 // import { Button, ButtonText } from '@gluestack-ui/themed';
 import React from 'react';
 
-const MyButton = (props: any) => {
+export const MyButton = (props: any) => {
   return (
     // <Button>
     //   <ButtonText>MyButton</ButtonText>
@@ -9,5 +9,3 @@ const MyButton = (props: any) => {
     <div {...props}>MyButton</div>
   );
 };
-
-export default MyButton;

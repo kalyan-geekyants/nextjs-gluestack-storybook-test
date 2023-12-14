@@ -19,7 +19,9 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@custom-ui/themed": ["../../packages/themed/src"],
+      "@custom-ui/config": ["../../packages/config/src/gluestack-ui.config"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

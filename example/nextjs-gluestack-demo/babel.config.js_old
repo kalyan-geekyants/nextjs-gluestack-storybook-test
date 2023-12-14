@@ -2,8 +2,9 @@ const path = require('path');
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: ['babel-preset-expo', 'next/babel'],
+    presets: ['next/babel', 'babel-preset-expo'],
     plugins: [
+      ['@babel/plugin-transform-private-methods', { loose: true }],
       process.env.NODE_ENV !== 'production'
         ? [
             'module-resolver',

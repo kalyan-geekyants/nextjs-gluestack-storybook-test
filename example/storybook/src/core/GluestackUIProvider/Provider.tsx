@@ -12,7 +12,7 @@ import { config } from '@custom-ui/config';
 const ProviderStory = () => {
   const [colorMode, setColorMode] = React.useState<
     'light' | 'dark' | undefined
-  >('dark');
+  >('light');
   const toggleColorMode = async () => {
     colorMode === 'light' ? setColorMode('dark') : setColorMode('light');
   };
